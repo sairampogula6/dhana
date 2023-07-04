@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DHANALAKSHMI</title>
+  <link rel="icon" href="pics/favicon1.png">
+<style>
+.slideshow-container {
+  position:center;
+  max-width: 100%;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.slide img {
+  width: 35% ;
+  height: 40%;
+  display: flex;
+        justify-content: center;
+        margin-left: 35%;
+        margin-top: 30%;
+       
+
+}
+
+/* Add animation */
+.fade {
+  animation: fade 5s linear ;
+}
+
+body{
+  background-color:lightgoldenrodyellow;
+  background-image: url(pics/job1.jpg);
+}
+.ul{
+  text-align: center;
+  margin-top: 6%;
+  justify-content: center;
+}
+h1{
+  text-align: center;
+  margin-top: 3%;
+  justify-content: center;
+}
+</style>
+</head>
+<body>
+<h1>ABOUT</h1>
+<div class="slideshow-container">
+  <div class="slide fade">
+    <img src="pics/image1.jpg" alt="Image 1"  >
+  </div>
+  <div class="slide fade">
+    <img src="pics/image2.jpg" alt="Image 2" >
+  </div>
+  <div class="slide fade">
+    <img src="pics/image3.jpg" alt="Image 3" >
+  </div>
+<div CLASS="ul">
+  <ul>
+    <li>Welcome to DHANALAKSHMI fertilizers and pesticides, your one-stop destination for all your fertilizer needs.<br> We are dedicated to providing high-quality fertilizers and expert advice to help you achieve healthy and thriving <br>plants, gardens, and landscapes. Here is some information about our fertilizer shop that you may find helpful:</li>
+  </ul><br>
+  <ol>
+    <li>Mission Statement:
+      At DHANALAKSHMI fertilizers and pesticides, our mission is to empower gardeners, farmers, and plant enthusiasts<br> with the best fertilizers and knowledge to optimize plant growth and productivity. <br>We strive to offer a wide range of top-notch fertilizers while promoting sustainable and environmentally friendly practices.</li>
+    <br><li>Expertise:
+      Our team consists of experienced horticulturists and agricultural experts who are passionate about plants and <br>dedicated to helping you succeed in your gardening or farming endeavors. We stay updated with the latest <br>advancements in fertilization techniques and are always ready to provide personalized advice and recommendations.</li>
+    <br><li>Product Range:
+      We stock a comprehensive selection of fertilizers tailored to meet the specific needs of various plants, crops,<br> and soil types. Our inventory includes organic fertilizers, synthetic fertilizers, slow-release fertilizers,<br> liquid fertilizers, and specialty blends. We source our products from reputable manufacturers to ensure their quality and effectiveness.
+      </li>
+    <br><li>Customer Service:
+      Customer satisfaction is our top priority. We aim to provide a friendly and helpful shopping experience for everyone <br>who visits our shop. Our staff is available to answer your questions, offer guidance, and assist you in <br>finding the right fertilizers for your specific needs. We believe relationships with our customers based on trust, integrity, and reliability.
+      
+      </li>
+    <br><li>Store Location:
+      BODDU CHINTHALPALLI, MDL:GEESUKONDA,DIST:HANAMKONDA STATE: TELANGANA,PIN:</li>
+    
+  </ol>
+</div>
+</div>
+
+<script>
+    // JavaScript to control the slideshow
+    var slides = document.getElementsByClassName("slide");
+    var currentSlide = 0;
+    
+    function showSlide() {
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      currentSlide++;
+      if (currentSlide > slides.length) {
+        currentSlide = 1;
+      }
+      slides[currentSlide - 1].style.display = "block";
+      setTimeout(showSlide, 3000); // Change slide every 6 seconds
+    }
+    
+    showSlide();
+    </script>
+
+</body>
+</html>

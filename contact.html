@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="pics/favicon1.png">
+    <style>
+/*contact*/
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  .owner-details {
+    margin-bottom: 20px;
+  }
+  
+  .owner-details h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  /* Optional styling for form elements */
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+  }
+  body{
+    background-color: antiquewhite;
+    background-image: url(pics/job1.jpg);
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <h1>Contact Us</h1>
+    <p>Please feel free to get in touch with us. We'll get back to you as soon as possible.</p>
+    <div class="owner-details">
+      <h2>Contact Details</h2>
+      <p><strong>Owner: RAJESH REDDY</strong></p>
+      <p>Email: sairampogula0@gmail.com</p>
+      <p>Phone: 7569673346</p>
+    </div>
+    <form  action="mailto:sairampogula0@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
